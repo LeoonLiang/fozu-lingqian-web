@@ -2,10 +2,10 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  
+
   // 开启静态站点生成 (SSG)
-  ssr: true, 
-  
+  ssr: true,
+
   app: {
     head: {
       title: '玄武山佛祖灵签',
@@ -21,4 +21,8 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'github-pages'
   },
+
+  css: ['~/assets/css/main.css'],
+
+  modules: ['@nuxtjs/tailwindcss']
 })
