@@ -256,11 +256,20 @@
                     <span class="text-xuanwu-border-dark">◈</span> {{ sec.title }}
                   </h3>
                   <div class="section-content space-y-4">
-                    <div v-for="(val, key) in data[sec.dataKey]" :key="key" class="info-row flex items-start gap-3">
-                      <span :class="['info-label shrink-0 mt-1', String(key).includes('解曰') ? 'tag-red opacity-90 ' : 'tag-paper border-none bg-transparent font-bold text-xuanwu-text-light w-12 text-right relative']">
-                        {{ key }}<span v-if="!String(key).includes('解曰')" class="absolute -right-2 top-0">:</span>
-                      </span>
-                      <p class="info-value text-xuanwu-text leading-relaxed flex-1" :class="String(key).includes('解曰') ? 'font-medium' : ''">{{ val }}</p>
+                    <!-- if entire section has no non-empty value show fallback message -->
+                    <div v-if="!sectionHasAnyValue(sec.dataKey)" class="text-center text-xuanwu-text-light italic">
+                      本签暂无文字描述，建议查看下方原图。
+                    </div>
+                    <div v-else>
+                      <div v-for="(val, key) in data[sec.dataKey]" :key="key" class="info-row flex items-start gap-3">
+                        <span :class="['info-label shrink-0 mt-1', String(key).includes('解曰') ? 'tag-red opacity-90 ' : 'tag-paper border-none bg-transparent font-bold text-xuanwu-text-light w-12 text-right relative']">
+                          {{ key }}<span v-if="!String(key).includes('解曰')" class="absolute -right-2 top-0">:</span>
+                        </span>
+                        <p class="info-value text-xuanwu-text leading-relaxed flex-1" :class="String(key).includes('解曰') ? 'font-medium' : ''">
+                          <template v-if="val && String(val).trim() !== ''">{{ val }}</template>
+                          <template v-else class="text-xuanwu-text-light italic">详见下方图片</template>
+                        </p>
+                      </div>
                     </div>
                   </div>
                </div>
@@ -373,6 +382,15 @@ function showSection(catId: string) {
   // Specific fallbacks to make sure data is shown logically
   if (activeCategory.value === 'intro' && catId === 'intro') return true;
   return activeCategory.value === catId;
+}
+
+/**
+ * return true when at least one non-empty value exists in that section data object
+ */
+function sectionHasAnyValue(dataKey: string) {
+  const obj = data.value?.[dataKey];
+  if (!obj || typeof obj !== 'object') return false;
+  return Object.values(obj).some((v) => v && String(v).trim() !== '');
 }
 
 // 辅助函数：生成图片 URL
