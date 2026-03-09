@@ -108,4 +108,21 @@
         @apply text-xuanwu-red font-bold tracking-widest text-shadow-sm;
         text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
     }
+
+    /* Fortune buttons */
+    .btn-fortune {
+        @apply w-48 py-3 text-lg font-serif rounded tracking-widest cursor-pointer transition-all shadow-antique;
+    }
+
+    .btn-fortune-primary {
+        @apply btn-fortune border-0 bg-xuanwu-red text-white hover:bg-xuanwu-red-light;
+    }
+
+    .btn-fortune-gold {
+        @apply btn-fortune border-0 bg-xuanwu-gold text-white hover:bg-xuanwu-gold-light;
+    }
+
+    .btn-fortune-ghost {
+        @apply btn-fortune bg-transparent text-xuanwu-text-light border border-xuanwu-border shadow-none hover:bg-xuanwu-border hover:text-white;
+    }
 }

@@ -4,6 +4,8 @@
     <div class="absolute top-0 left-0 right-0 h-64 bg-gradient-to-b from-[#DDCBB5] to-transparent pointer-events-none opacity-60"></div>
 
     <div class="container mx-auto px-4 relative z-10 max-w-4xl">
+
+
       <!-- Header -->
       <div class="text-center pt-10 pb-6">
         <h1 class="text-3xl font-bold text-xuanwu-red font-serif tracking-widest text-shadow mb-2 flex items-center justify-center gap-2">
@@ -14,37 +16,38 @@
           <span>五十—签 仙机妙解</span>
           <span class="w-12 h-px bg-xuanwu-border-dark"></span>
         </div>
+        <p class="text-xs text-xuanwu-text-light mt-3 max-w-lg mx-auto leading-relaxed">玄武山佛祖灵签是广东陆丰碣石玄武山元山寺所供签文，在民间流传甚广，吸引众多信众前来求签问卜。本站收集了玄武山佛祖灵签共51签，仅供研究参考，请理性看待文化传统解读。</p>
       </div>
 
+      <!-- Section 1: 求签掷杯 -->
+      <FortuneDrawing />
 
-      <!-- Decorative Divider -->
-      <div class="flex justify-center mb-6">
-        <div class="w-32 h-2 opacity-50 flex items-center justify-between">
-          <span class="w-full h-px bg-xuanwu-border-dark"></span>
-          <span class="mx-2 text-xuanwu-border-dark text-xs">◈</span>
-          <span class="w-full h-px bg-xuanwu-border-dark"></span>
+      <!-- Section 2: 解签 -->
+      <div class="mt-8">
+        <div class="flex items-center justify-center gap-2 mb-6">
+          <span class="w-12 h-px bg-xuanwu-border-dark"></span>
+          <span class="text-xuanwu-text font-serif tracking-widest text-base">签 文 一 览</span>
+          <span class="w-12 h-px bg-xuanwu-border-dark"></span>
         </div>
-      </div>
 
-      <!-- Card Grid -->
-      <div v-if="pending" class="text-center py-10 text-xuanwu-text-light">
-        读取签文中...
-      </div>
-      <div v-else class="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <NuxtLink 
-          v-for="(item, index) in list" 
-          :key="item.签号" 
-          :to="`/${String(index + 1).padStart(2, '0')}`"
-          class="antique-card flex flex-col items-center justify-center p-5 group"
-        >
-          <div class="text-lg font-bold text-xuanwu-text mb-2 group-hover:text-xuanwu-red transition-colors">{{ item.签号 }}</div>
-          <div class="text-sm text-xuanwu-text mb-3 font-medium">{{ item.签名 }}</div>
-          <div class="flex gap-1.5 flex-wrap justify-center">
-            <!-- Mock tags for visual parity with design, mixing real type with static -->
-            <span class="tag-red" v-if="item.签文类型">{{ item.签文类型 }}</span>
-            <span class="tag-paper">{{ item.卦象 }}</span>
-          </div>
-        </NuxtLink>
+        <div v-if="pending" class="text-center py-10 text-xuanwu-text-light">
+          读取签文中...
+        </div>
+        <div v-else class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <NuxtLink
+            v-for="(item, index) in list"
+            :key="item.签号"
+            :to="`/${String(index + 1).padStart(2, '0')}`"
+            class="antique-card flex flex-col items-center justify-center p-5 group"
+          >
+            <div class="text-lg font-bold text-xuanwu-text mb-2 group-hover:text-xuanwu-red transition-colors">{{ item.签号 }}</div>
+            <div class="text-sm text-xuanwu-text mb-3 font-medium">{{ item.签名 }}</div>
+            <div class="flex gap-1.5 flex-wrap justify-center">
+              <span class="tag-red" v-if="item.签文类型">{{ item.签文类型 }}</span>
+              <span v-if="item.卦象" class="tag-paper">{{ item.卦象 }}</span>
+            </div>
+          </NuxtLink>
+        </div>
       </div>
     </div>
   </div>
