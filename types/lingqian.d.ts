@@ -61,24 +61,27 @@ export interface FortuneStick {
   移徙: {
     移徙: string;
   };
+  // the following categories used to have custom-keyed text (e.g. 行人.诗)
+  // the data structure was simplified: each now just contains 签文 + 解曰.
+  // keep the index signature at bottom so any legacy extras still compile.
   行人: {
-    诗: string;
+    签文: string;
     解曰: string;
   };
   婚姻: {
-    婚姻: string;
+    签文: string;
     解曰: string;
   };
   官讼: {
-    官讼: string;
+    签文: string;
     解曰: string;
   };
   失物: {
-    失物: string;
+    签文: string;
     解曰: string;
   };
   占病: {
-    占病: string;
+    签文: string;
     解曰: string;
   };
   其他: {

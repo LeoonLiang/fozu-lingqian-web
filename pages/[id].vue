@@ -157,7 +157,7 @@
                   </thead>
                   <tbody>
                     <tr v-for="(age, i) in data.岁君签.年龄运势" :key="age.年龄" :class="i % 2 === 0 ? 'bg-xuanwu-bg/30' : ''">
-                      <td class="py-2 px-4 border-b border-xuanwu-border/30 font-medium">{{ age.年龄 }}</td>
+                      <td class="py-2 px-4 border-b border-xuanwu-border/30 font-medium whitespace-nowrap">{{ age.年龄 }}</td>
                       <td class="py-2 px-4 border-b border-xuanwu-border/30" :class="age.男 === '吉' ? 'text-xuanwu-red font-bold' : ''">{{ age.男 }}</td>
                       <td class="py-2 px-4 border-b border-xuanwu-border/30" :class="age.女 === '吉' ? 'text-xuanwu-red font-bold' : ''">{{ age.女 }}</td>
                     </tr>
@@ -176,8 +176,8 @@
                   </h3>
                   <div class="section-content space-y-4">
                     <div v-for="(val, key) in data[sec.dataKey]" :key="key" class="info-row flex items-start gap-3">
-                      <span :class="['info-label shrink-0 mt-1', String(key).includes('解曰') ? 'tag-red opacity-90' : 'tag-paper border-none bg-transparent font-bold text-xuanwu-text-light w-12 text-right relative']">
-                        {{ String(key).replace('解曰', '解') }}<span v-if="!String(key).includes('解曰')" class="absolute -right-2 top-0">:</span>
+                      <span :class="['info-label shrink-0 mt-1', String(key).includes('解曰') ? 'tag-red opacity-90 ' : 'tag-paper border-none bg-transparent font-bold text-xuanwu-text-light w-12 text-right relative']">
+                        {{ key }}<span v-if="!String(key).includes('解曰')" class="absolute -right-2 top-0">:</span>
                       </span>
                       <p class="info-value text-xuanwu-text leading-relaxed flex-1" :class="String(key).includes('解曰') ? 'font-medium' : ''">{{ val }}</p>
                     </div>
@@ -297,7 +297,6 @@ function showSection(catId: string) {
 function getImageUrl(id: string, index: number) {
   return `https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/${parseInt(id)}_${index}.jpg`
 }
-
 // SEO Meta
 useSeoMeta({
   title: () => data.value ? `${data.value.签号} ${data.value.签名} - 汕尾玄武山佛祖灵签` : '灵签详情',
