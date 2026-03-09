@@ -3,7 +3,7 @@
     <!-- Background Texture/Decoration -->
     <div class="absolute top-0 left-0 right-0 h-64 bg-gradient-to-b from-[#DDCBB5] to-transparent pointer-events-none opacity-60"></div>
 
-    <div class="container mx-auto px-4 relative z-10 max-w-lg">
+    <div class="container mx-auto px-4 relative z-10 max-w-4xl">
       <!-- Header -->
       <div class="text-center pt-10 pb-6">
         <h1 class="text-3xl font-bold text-xuanwu-red font-serif tracking-widest text-shadow mb-2 flex items-center justify-center gap-2">
@@ -30,7 +30,7 @@
       <div v-if="pending" class="text-center py-10 text-xuanwu-text-light">
         读取签文中...
       </div>
-      <div v-else class="grid grid-cols-2 gap-4">
+      <div v-else class="grid grid-cols-2 md:grid-cols-4 gap-4">
         <NuxtLink 
           v-for="(item, index) in list" 
           :key="item.签号" 
@@ -45,12 +45,6 @@
             <span class="tag-paper">{{ item.卦象 }}</span>
           </div>
         </NuxtLink>
-      </div>
-
-      <!-- Footer Stats -->
-      <div class="text-center mt-12 text-sm text-xuanwu-text-light relative">
-        <div class="absolute left-0 right-0 top-1/2 -translate-y-1/2 h-8 pointer-events-none opacity-20 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cGF0aCBkPSJNMTAgNTBRMjUgMzAgNTAgNTBUNzUgNTBUMTAwIDUwIiBzdHJva2U9IiM1NSIgZmlsbD0ibm9uZSIvPjwvc3ZnPg==')] bg-repeat-x bg-center" style="background-size: 100px 30px;"></div>
-        <span class="bg-xuanwu-bg px-2 relative z-10">今日已有 <span class="text-xuanwu-text font-bold">1283</span> 人求签</span>
       </div>
     </div>
   </div>

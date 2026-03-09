@@ -29,14 +29,90 @@
           <!-- Inner ornate border for sidebar -->
           <div class="absolute inset-1 border border-xuanwu-border-dark opacity-30 pointer-events-none"></div>
           
-          <div class="flex lg:flex-col overflow-x-auto lg:overflow-visible gap-1 relative z-10 scrollbar-hide py-2 lg:py-0">
+          <!-- Mobile Custom Bottom Sheet Navigation -->
+          <div class="block lg:hidden relative z-10 w-full mb-1">
+            <button 
+              @click="isMobileMenuOpen = true"
+              class="w-full flex items-center justify-between bg-xuanwu-paper border border-xuanwu-border-dark/40 text-xuanwu-red font-medium py-3 px-4 rounded-sm shadow-sm transition-colors"
+            >
+              <div class="flex items-center gap-3">
+                <svg class="w-5 h-5 opacity-80" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                   <path stroke-linecap="round" stroke-linejoin="round" :d="categories.find(c => c.id === activeCategory)?.icon || ''" />
+                </svg>
+                <span>{{ categories.find(c => c.id === activeCategory)?.label || '选择分类' }}</span>
+              </div>
+              <svg class="w-5 h-5 text-xuanwu-red/70 transition-transform duration-300" :class="{ 'rotate-180': isMobileMenuOpen }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            
+            <!-- Bottom Sheet Overlay -->
+            <transition
+              enter-active-class="transition-opacity duration-300 ease-out"
+              enter-from-class="opacity-0"
+              enter-to-class="opacity-100"
+              leave-active-class="transition-opacity duration-200 ease-in"
+              leave-from-class="opacity-100"
+              leave-to-class="opacity-0"
+            >
+              <div v-if="isMobileMenuOpen" class="fixed inset-0 bg-black/50 z-[100] sm:hidden" @click="isMobileMenuOpen = false"></div>
+            </transition>
+
+            <!-- Bottom Sheet Content -->
+            <transition
+              enter-active-class="transition-transform duration-300 ease-out"
+              enter-from-class="translate-y-full"
+              enter-to-class="translate-y-0"
+              leave-active-class="transition-transform duration-200 ease-in"
+              leave-from-class="translate-y-0"
+              leave-to-class="translate-y-full"
+            >
+              <div v-if="isMobileMenuOpen" class="fixed bottom-0 left-0 right-0 bg-xuanwu-paper rounded-t-2xl z-[101] max-h-[80vh] flex flex-col shadow-[0_-10px_40px_rgba(0,0,0,0.1)] sm:hidden">
+                 <div class="flex justify-between items-center p-4 border-b border-xuanwu-border/40">
+                   <h3 class="font-bold text-lg text-xuanwu-text">选择测算项目</h3>
+                   <button @click="isMobileMenuOpen = false" class="p-2 text-xuanwu-text-light hover:text-xuanwu-red rounded-full transition-colors">
+                     <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                     </svg>
+                   </button>
+                 </div>
+                 <div class="overflow-y-auto p-4 flex-1 scrollbar-hide space-y-2">
+                    <button 
+                      v-for="cat in categories" 
+                      :key="cat.id"
+                      @click="activeCategory = cat.id; isMobileMenuOpen = false"
+                      :class="[
+                        'w-full flex items-center gap-3 px-4 py-3 rounded-md transition-all',
+                        activeCategory === cat.id 
+                          ? 'bg-xuanwu-bg border border-xuanwu-border/50 text-xuanwu-red shadow-sm' 
+                          : 'bg-transparent text-xuanwu-text active:bg-xuanwu-bg/50'
+                      ]"
+                    >
+                      <svg 
+                        :class="['w-5 h-5', activeCategory === cat.id ? 'text-xuanwu-red' : 'text-xuanwu-border-dark']"
+                        fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"
+                      >
+                         <path stroke-linecap="round" stroke-linejoin="round" :d="cat.icon" />
+                      </svg>
+                      <span class="flex-1 text-left font-medium text-base">{{ cat.label }}</span>
+                      <svg v-if="activeCategory === cat.id" class="w-5 h-5 text-xuanwu-red" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                      </svg>
+                    </button>
+                 </div>
+              </div>
+            </transition>
+          </div>
+
+          <!-- Desktop Sidebar Navigation -->
+          <div class="hidden lg:flex lg:flex-col gap-1 relative z-10 py-0 px-1">
             <button 
               v-for="cat in categories" 
               :key="cat.id"
               :class="[
-                'whitespace-nowrap lg:whitespace-normal text-left px-4 py-3 rounded-sm text-md font-medium transition-all duration-300 relative group flex items-center gap-3',
+                'flex flex-row items-center justify-start gap-3 px-4 py-3 rounded-sm transition-all duration-300 relative group text-left',
                 activeCategory === cat.id 
-                  ? 'text-xuanwu-red bg-xuanwu-bg shadow-inner border-y border-xuanwu-border-dark border-opacity-20' 
+                  ? 'text-xuanwu-red bg-xuanwu-bg shadow-inner border border-xuanwu-border-dark/20' 
                   : 'text-xuanwu-text hover:bg-xuanwu-paper-dark hover:text-xuanwu-red'
               ]"
               @click="activeCategory = cat.id"
@@ -53,10 +129,10 @@
               >
                 <path stroke-linecap="round" stroke-linejoin="round" :d="cat.icon" />
               </svg>
-              <span class="flex-1">{{ cat.label }}</span>
+              <span class="text-md font-medium leading-tight flex-1">{{ cat.label }}</span>
               <svg 
                 v-if="activeCategory === cat.id" 
-                class="hidden lg:block w-4 h-4 text-xuanwu-red-light" 
+                class="w-4 h-4 text-xuanwu-red-light shrink-0" 
                 fill="none" 
                 viewBox="0 0 24 24" 
                 stroke="currentColor"
@@ -72,7 +148,7 @@
         <div class="flex-1 w-full space-y-6">
           
           <!-- Core Stick Info (Always visible or merged into overview) -->
-          <div class="bg-xuanwu-paper shadow-antique rounded-sm p-1 relative z-10">
+          <div class="bg-xuanwu-paper shadow-antique rounded-sm p-1 relative">
             <div class="border-2 border-xuanwu-border border-double p-5 lg:p-8 bg-xuanwu-paper relative">
                <!-- Decorative corners -->
               <div class="absolute top-2 left-2 w-4 h-4 border-t-2 border-l-2 border-xuanwu-border-dark"></div>
@@ -146,23 +222,28 @@
                  <p class="font-medium text-lg text-center flex-1 tracking-wider">{{ data.岁君签.总诗 }}</p>
               </div>
               
-              <div class="age-table overflow-x-auto">
-                <table class="w-full min-w-[300px] border-collapse text-center">
-                  <thead>
-                    <tr class="bg-xuanwu-border/20 border-b-2 border-xuanwu-border-dark justify-center">
-                      <th class="py-2 px-4 font-normal text-xuanwu-text-light">年龄</th>
-                      <th class="py-2 px-4 font-normal text-xuanwu-text-light">男</th>
-                      <th class="py-2 px-4 font-normal text-xuanwu-text-light">女</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr v-for="(age, i) in data.岁君签.年龄运势" :key="age.年龄" :class="i % 2 === 0 ? 'bg-xuanwu-bg/30' : ''">
-                      <td class="py-2 px-4 border-b border-xuanwu-border/30 font-medium whitespace-nowrap">{{ age.年龄 }}</td>
-                      <td class="py-2 px-4 border-b border-xuanwu-border/30" :class="age.男 === '吉' ? 'text-xuanwu-red font-bold' : ''">{{ age.男 }}</td>
-                      <td class="py-2 px-4 border-b border-xuanwu-border/30" :class="age.女 === '吉' ? 'text-xuanwu-red font-bold' : ''">{{ age.女 }}</td>
-                    </tr>
-                  </tbody>
-                </table>
+              <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 pb-2">
+                <div v-for="(age, i) in data.岁君签.年龄运势" :key="i" class="flex flex-col border border-xuanwu-border bg-xuanwu-paper rounded-sm shadow-sm overflow-hidden">
+                  <div class="py-2 px-4 border-b border-xuanwu-border/50 text-center bg-xuanwu-border/10 font-bold text-xuanwu-red text-lg">
+                    {{ age.年龄 }}
+                  </div>
+                  <div class="flex flex-col divide-y divide-xuanwu-border/30">
+                    <div class="p-4 flex items-start gap-4 hover:bg-xuanwu-bg/30 transition-colors">
+                      <div class="w-8 h-8 rounded-sm bg-xuanwu-border/20 flex flex-shrink-0 items-center justify-center font-bold text-xuanwu-text-light text-sm border border-xuanwu-border/50">男</div>
+                      <p class="text-xuanwu-text leading-relaxed mt-0.5 text-[15px] flex-1">
+                        <span v-if="age.男 === '吉' || age.男 === '凶'" :class="age.男 === '吉' ? 'text-xuanwu-red font-bold' : 'font-bold'">【{{ age.男 }}】</span>
+                        <span v-else>{{ age.男 }}</span>
+                      </p>
+                    </div>
+                    <div class="p-4 flex items-start gap-4 hover:bg-xuanwu-bg/30 transition-colors">
+                      <div class="w-8 h-8 rounded-sm bg-xuanwu-border/20 flex flex-shrink-0 items-center justify-center font-bold text-xuanwu-text-light text-sm border border-xuanwu-border/50">女</div>
+                      <p class="text-xuanwu-text leading-relaxed mt-0.5 text-[15px] flex-1">
+                        <span v-if="age.女 === '吉' || age.女 === '凶'" :class="age.女 === '吉' ? 'text-xuanwu-red font-bold' : 'font-bold'">【{{ age.女 }}】</span>
+                        <span v-else>{{ age.女 }}</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </section>
@@ -272,6 +353,7 @@ const standardSections = [
 ]
 
 const activeCategory = ref('all')
+const isMobileMenuOpen = ref(false)
 
 // Lightbox state
 const visibleRef = ref(false)
