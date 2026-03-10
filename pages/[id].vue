@@ -321,10 +321,11 @@ import VueEasyLightbox from 'vue-easy-lightbox'
 const route = useRoute()
 const id = route.params.id as string
 
-const DATA_URL = `https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/data/${id}.json?t=${Date.now()}`
+const DATA_URL = `https://raw.githubusercontent.com/LeoonLiang/xuanwu-fozu-lingqian/main/data/${id}.json?t=${Date.now()}`
 
 const { data, pending, error } = await useFetch<FortuneStick>(DATA_URL, {
-  key: `stick-${id}`
+  key: `stick-${id}`,
+  transform: (res) => typeof res === 'string' ? JSON.parse(res) : res
 })
 
 // 分类配置 & SVG Icons
