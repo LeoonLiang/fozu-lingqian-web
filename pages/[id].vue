@@ -219,7 +219,7 @@
               </h3>
               <div class="age-poem mb-6 flex items-start gap-3">
                  <span class="tag-red shrink-0 mt-1">签诗</span>
-                 <p class="font-medium text-lg text-center flex-1 tracking-wider">{{ data.岁君签.总诗 }}</p>
+                 <p class="font-medium text-lg flex-1 tracking-wider">{{ data.岁君签.总诗 }}</p>
               </div>
               
               <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 pb-2">

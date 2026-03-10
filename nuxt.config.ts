@@ -37,14 +37,16 @@ export default defineNuxtConfig({
 
   modules: [
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/seo'
+    '@nuxtjs/seo',
+    '@nuxtjs/sitemap'
   ],
 
   site: {
-    url: 'https://leoonliang.github.io',
-    name: '玄武山佛祖灵签',
-    description: '玄武山佛祖灵签在线求签，心诚则灵。提供五十一签详细解签，包括诗曰、家宅、岁君、生意、谋望、婚姻等全方位运势解析。',
-    defaultLocale: 'zh-CN', 
+    url: 'https://fzlq.photix.cc/',
+    name: '汕尾碣石玄武山佛祖灵签',
+    description: '汕尾碣石玄武山佛祖灵签在线求签，心诚则灵。提供五十一签详细解签，包括诗曰、家宅、岁君、生意、谋望、婚姻等全方位运势解析。',
+    defaultLocale: 'zh-CN',
+    ogImage: 'https://fzlq.photix.cc//preview.png'
   },
 
   schemaOrg: {
