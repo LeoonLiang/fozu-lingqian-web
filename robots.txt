@@ -2,5 +2,5 @@
 User-agent: *
 Disallow: 
 
-Sitemap: https://leoonliang.github.io/sitemap.xml
+Sitemap: https://fzlq.photix.cc/sitemap.xml
 # END nuxt-robots

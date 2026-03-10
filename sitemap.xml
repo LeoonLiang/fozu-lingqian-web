@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="/__sitemap__/style.xsl"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://leoonliang.github.io/</loc>
+        <loc>https://fzlq.photix.cc/</loc>
         <image:image>
-            <image:loc>https://leoonliang.github.io/_nuxt/签筒.BJNltq1d.png</image:loc>
+            <image:loc>https://fzlq.photix.cc/_nuxt/签筒.BJNltq1d.png</image:loc>
         </image:image>
         <image:image>
-            <image:loc>https://leoonliang.github.io/_nuxt/筊杯阳.DyppXpDa.png</image:loc>
+            <image:loc>https://fzlq.photix.cc/_nuxt/筊杯阳.DyppXpDa.png</image:loc>
         </image:image>
     </url>
     <url>
-        <loc>https://leoonliang.github.io/01</loc>
+        <loc>https://fzlq.photix.cc/01</loc>
         <image:image>
             <image:loc>https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/1_1.jpg</image:loc>
         </image:image>
@@ -19,7 +19,7 @@
         </image:image>
     </url>
     <url>
-        <loc>https://leoonliang.github.io/02</loc>
+        <loc>https://fzlq.photix.cc/02</loc>
         <image:image>
             <image:loc>https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/2_1.jpg</image:loc>
         </image:image>
@@ -28,7 +28,7 @@
         </image:image>
     </url>
     <url>
-        <loc>https://leoonliang.github.io/03</loc>
+        <loc>https://fzlq.photix.cc/03</loc>
         <image:image>
             <image:loc>https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/3_1.jpg</image:loc>
         </image:image>
@@ -37,7 +37,7 @@
         </image:image>
     </url>
     <url>
-        <loc>https://leoonliang.github.io/04</loc>
+        <loc>https://fzlq.photix.cc/04</loc>
         <image:image>
             <image:loc>https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/4_1.jpg</image:loc>
         </image:image>
@@ -46,7 +46,7 @@
         </image:image>
     </url>
     <url>
-        <loc>https://leoonliang.github.io/05</loc>
+        <loc>https://fzlq.photix.cc/05</loc>
         <image:image>
             <image:loc>https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/5_1.jpg</image:loc>
         </image:image>
@@ -55,7 +55,7 @@
         </image:image>
     </url>
     <url>
-        <loc>https://leoonliang.github.io/06</loc>
+        <loc>https://fzlq.photix.cc/06</loc>
         <image:image>
             <image:loc>https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/6_1.jpg</image:loc>
         </image:image>
@@ -64,7 +64,7 @@
         </image:image>
     </url>
     <url>
-        <loc>https://leoonliang.github.io/07</loc>
+        <loc>https://fzlq.photix.cc/07</loc>
         <image:image>
             <image:loc>https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/7_1.jpg</image:loc>
         </image:image>
@@ -73,7 +73,7 @@
         </image:image>
     </url>
     <url>
-        <loc>https://leoonliang.github.io/08</loc>
+        <loc>https://fzlq.photix.cc/08</loc>
         <image:image>
             <image:loc>https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/8_1.jpg</image:loc>
         </image:image>
@@ -82,7 +82,7 @@
         </image:image>
     </url>
     <url>
-        <loc>https://leoonliang.github.io/09</loc>
+        <loc>https://fzlq.photix.cc/09</loc>
         <image:image>
             <image:loc>https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/9_1.jpg</image:loc>
         </image:image>
@@ -91,7 +91,7 @@
         </image:image>
     </url>
     <url>
-        <loc>https://leoonliang.github.io/10</loc>
+        <loc>https://fzlq.photix.cc/10</loc>
         <image:image>
             <image:loc>https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/10_1.jpg</image:loc>
         </image:image>
@@ -100,7 +100,7 @@
         </image:image>
     </url>
     <url>
-        <loc>https://leoonliang.github.io/11</loc>
+        <loc>https://fzlq.photix.cc/11</loc>
         <image:image>
             <image:loc>https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/11_1.jpg</image:loc>
         </image:image>
@@ -109,7 +109,7 @@
         </image:image>
     </url>
     <url>
-        <loc>https://leoonliang.github.io/12</loc>
+        <loc>https://fzlq.photix.cc/12</loc>
         <image:image>
             <image:loc>https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/12_1.jpg</image:loc>
         </image:image>
@@ -118,7 +118,7 @@
         </image:image>
     </url>
     <url>
-        <loc>https://leoonliang.github.io/13</loc>
+        <loc>https://fzlq.photix.cc/13</loc>
         <image:image>
             <image:loc>https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/13_1.jpg</image:loc>
         </image:image>
@@ -127,7 +127,7 @@
         </image:image>
     </url>
     <url>
-        <loc>https://leoonliang.github.io/14</loc>
+        <loc>https://fzlq.photix.cc/14</loc>
         <image:image>
             <image:loc>https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/14_1.jpg</image:loc>
         </image:image>
@@ -136,7 +136,7 @@
         </image:image>
     </url>
     <url>
-        <loc>https://leoonliang.github.io/15</loc>
+        <loc>https://fzlq.photix.cc/15</loc>
         <image:image>
             <image:loc>https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/15_1.jpg</image:loc>
         </image:image>
@@ -145,7 +145,7 @@
         </image:image>
     </url>
     <url>
-        <loc>https://leoonliang.github.io/16</loc>
+        <loc>https://fzlq.photix.cc/16</loc>
         <image:image>
             <image:loc>https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/16_1.jpg</image:loc>
         </image:image>
@@ -154,7 +154,7 @@
         </image:image>
     </url>
     <url>
-        <loc>https://leoonliang.github.io/17</loc>
+        <loc>https://fzlq.photix.cc/17</loc>
         <image:image>
             <image:loc>https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/17_1.jpg</image:loc>
         </image:image>
@@ -163,7 +163,7 @@
         </image:image>
     </url>
     <url>
-        <loc>https://leoonliang.github.io/18</loc>
+        <loc>https://fzlq.photix.cc/18</loc>
         <image:image>
             <image:loc>https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/18_1.jpg</image:loc>
         </image:image>
@@ -172,7 +172,7 @@
         </image:image>
     </url>
     <url>
-        <loc>https://leoonliang.github.io/19</loc>
+        <loc>https://fzlq.photix.cc/19</loc>
         <image:image>
             <image:loc>https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/19_1.jpg</image:loc>
         </image:image>
@@ -181,7 +181,7 @@
         </image:image>
     </url>
     <url>
-        <loc>https://leoonliang.github.io/20</loc>
+        <loc>https://fzlq.photix.cc/20</loc>
         <image:image>
             <image:loc>https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/20_1.jpg</image:loc>
         </image:image>
@@ -190,7 +190,7 @@
         </image:image>
     </url>
     <url>
-        <loc>https://leoonliang.github.io/21</loc>
+        <loc>https://fzlq.photix.cc/21</loc>
         <image:image>
             <image:loc>https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/21_1.jpg</image:loc>
         </image:image>
@@ -199,7 +199,7 @@
         </image:image>
     </url>
     <url>
-        <loc>https://leoonliang.github.io/22</loc>
+        <loc>https://fzlq.photix.cc/22</loc>
         <image:image>
             <image:loc>https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/22_1.jpg</image:loc>
         </image:image>
@@ -208,7 +208,7 @@
         </image:image>
     </url>
     <url>
-        <loc>https://leoonliang.github.io/23</loc>
+        <loc>https://fzlq.photix.cc/23</loc>
         <image:image>
             <image:loc>https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/23_1.jpg</image:loc>
         </image:image>
@@ -217,7 +217,7 @@
         </image:image>
     </url>
     <url>
-        <loc>https://leoonliang.github.io/24</loc>
+        <loc>https://fzlq.photix.cc/24</loc>
         <image:image>
             <image:loc>https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/24_1.jpg</image:loc>
         </image:image>
@@ -226,7 +226,7 @@
         </image:image>
     </url>
     <url>
-        <loc>https://leoonliang.github.io/25</loc>
+        <loc>https://fzlq.photix.cc/25</loc>
         <image:image>
             <image:loc>https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/25_1.jpg</image:loc>
         </image:image>
@@ -235,7 +235,7 @@
         </image:image>
     </url>
     <url>
-        <loc>https://leoonliang.github.io/26</loc>
+        <loc>https://fzlq.photix.cc/26</loc>
         <image:image>
             <image:loc>https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/26_1.jpg</image:loc>
         </image:image>
@@ -244,7 +244,7 @@
         </image:image>
     </url>
     <url>
-        <loc>https://leoonliang.github.io/27</loc>
+        <loc>https://fzlq.photix.cc/27</loc>
         <image:image>
             <image:loc>https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/27_1.jpg</image:loc>
         </image:image>
@@ -253,7 +253,7 @@
         </image:image>
     </url>
     <url>
-        <loc>https://leoonliang.github.io/28</loc>
+        <loc>https://fzlq.photix.cc/28</loc>
         <image:image>
             <image:loc>https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/28_1.jpg</image:loc>
         </image:image>
@@ -262,7 +262,7 @@
         </image:image>
     </url>
     <url>
-        <loc>https://leoonliang.github.io/29</loc>
+        <loc>https://fzlq.photix.cc/29</loc>
         <image:image>
             <image:loc>https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/29_1.jpg</image:loc>
         </image:image>
@@ -271,7 +271,7 @@
         </image:image>
     </url>
     <url>
-        <loc>https://leoonliang.github.io/30</loc>
+        <loc>https://fzlq.photix.cc/30</loc>
         <image:image>
             <image:loc>https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/30_1.jpg</image:loc>
         </image:image>
@@ -280,7 +280,7 @@
         </image:image>
     </url>
     <url>
-        <loc>https://leoonliang.github.io/31</loc>
+        <loc>https://fzlq.photix.cc/31</loc>
         <image:image>
             <image:loc>https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/31_1.jpg</image:loc>
         </image:image>
@@ -289,7 +289,7 @@
         </image:image>
     </url>
     <url>
-        <loc>https://leoonliang.github.io/32</loc>
+        <loc>https://fzlq.photix.cc/32</loc>
         <image:image>
             <image:loc>https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/32_1.jpg</image:loc>
         </image:image>
@@ -298,7 +298,7 @@
         </image:image>
     </url>
     <url>
-        <loc>https://leoonliang.github.io/33</loc>
+        <loc>https://fzlq.photix.cc/33</loc>
         <image:image>
             <image:loc>https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/33_1.jpg</image:loc>
         </image:image>
@@ -307,7 +307,7 @@
         </image:image>
     </url>
     <url>
-        <loc>https://leoonliang.github.io/34</loc>
+        <loc>https://fzlq.photix.cc/34</loc>
         <image:image>
             <image:loc>https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/34_1.jpg</image:loc>
         </image:image>
@@ -316,7 +316,7 @@
         </image:image>
     </url>
     <url>
-        <loc>https://leoonliang.github.io/35</loc>
+        <loc>https://fzlq.photix.cc/35</loc>
         <image:image>
             <image:loc>https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/35_1.jpg</image:loc>
         </image:image>
@@ -325,7 +325,7 @@
         </image:image>
     </url>
     <url>
-        <loc>https://leoonliang.github.io/36</loc>
+        <loc>https://fzlq.photix.cc/36</loc>
         <image:image>
             <image:loc>https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/36_1.jpg</image:loc>
         </image:image>
@@ -334,7 +334,7 @@
         </image:image>
     </url>
     <url>
-        <loc>https://leoonliang.github.io/37</loc>
+        <loc>https://fzlq.photix.cc/37</loc>
         <image:image>
             <image:loc>https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/37_1.jpg</image:loc>
         </image:image>
@@ -343,7 +343,7 @@
         </image:image>
     </url>
     <url>
-        <loc>https://leoonliang.github.io/38</loc>
+        <loc>https://fzlq.photix.cc/38</loc>
         <image:image>
             <image:loc>https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/38_1.jpg</image:loc>
         </image:image>
@@ -352,7 +352,7 @@
         </image:image>
     </url>
     <url>
-        <loc>https://leoonliang.github.io/39</loc>
+        <loc>https://fzlq.photix.cc/39</loc>
         <image:image>
             <image:loc>https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/39_1.jpg</image:loc>
         </image:image>
@@ -361,7 +361,7 @@
         </image:image>
     </url>
     <url>
-        <loc>https://leoonliang.github.io/40</loc>
+        <loc>https://fzlq.photix.cc/40</loc>
         <image:image>
             <image:loc>https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/40_1.jpg</image:loc>
         </image:image>
@@ -370,7 +370,7 @@
         </image:image>
     </url>
     <url>
-        <loc>https://leoonliang.github.io/41</loc>
+        <loc>https://fzlq.photix.cc/41</loc>
         <image:image>
             <image:loc>https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/41_1.jpg</image:loc>
         </image:image>
@@ -379,7 +379,7 @@
         </image:image>
     </url>
     <url>
-        <loc>https://leoonliang.github.io/42</loc>
+        <loc>https://fzlq.photix.cc/42</loc>
         <image:image>
             <image:loc>https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/42_1.jpg</image:loc>
         </image:image>
@@ -388,7 +388,7 @@
         </image:image>
     </url>
     <url>
-        <loc>https://leoonliang.github.io/43</loc>
+        <loc>https://fzlq.photix.cc/43</loc>
         <image:image>
             <image:loc>https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/43_1.jpg</image:loc>
         </image:image>
@@ -397,7 +397,7 @@
         </image:image>
     </url>
     <url>
-        <loc>https://leoonliang.github.io/44</loc>
+        <loc>https://fzlq.photix.cc/44</loc>
         <image:image>
             <image:loc>https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/44_1.jpg</image:loc>
         </image:image>
@@ -406,7 +406,7 @@
         </image:image>
     </url>
     <url>
-        <loc>https://leoonliang.github.io/45</loc>
+        <loc>https://fzlq.photix.cc/45</loc>
         <image:image>
             <image:loc>https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/45_1.jpg</image:loc>
         </image:image>
@@ -415,7 +415,7 @@
         </image:image>
     </url>
     <url>
-        <loc>https://leoonliang.github.io/46</loc>
+        <loc>https://fzlq.photix.cc/46</loc>
         <image:image>
             <image:loc>https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/46_1.jpg</image:loc>
         </image:image>
@@ -424,7 +424,7 @@
         </image:image>
     </url>
     <url>
-        <loc>https://leoonliang.github.io/47</loc>
+        <loc>https://fzlq.photix.cc/47</loc>
         <image:image>
             <image:loc>https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/47_1.jpg</image:loc>
         </image:image>
@@ -433,7 +433,7 @@
         </image:image>
     </url>
     <url>
-        <loc>https://leoonliang.github.io/48</loc>
+        <loc>https://fzlq.photix.cc/48</loc>
         <image:image>
             <image:loc>https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/48_1.jpg</image:loc>
         </image:image>
@@ -442,7 +442,7 @@
         </image:image>
     </url>
     <url>
-        <loc>https://leoonliang.github.io/49</loc>
+        <loc>https://fzlq.photix.cc/49</loc>
         <image:image>
             <image:loc>https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/49_1.jpg</image:loc>
         </image:image>
@@ -451,7 +451,7 @@
         </image:image>
     </url>
     <url>
-        <loc>https://leoonliang.github.io/50</loc>
+        <loc>https://fzlq.photix.cc/50</loc>
         <image:image>
             <image:loc>https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/50_1.jpg</image:loc>
         </image:image>
@@ -460,7 +460,7 @@
         </image:image>
     </url>
     <url>
-        <loc>https://leoonliang.github.io/51</loc>
+        <loc>https://fzlq.photix.cc/51</loc>
         <image:image>
             <image:loc>https://cdn.jsdelivr.net/gh/LeoonLiang/xuanwu-fozu-lingqian@main/image/51_1.jpg</image:loc>
         </image:image>
@@ -469,4 +469,4 @@
         </image:image>
     </url>
 </urlset>
-<!-- XML Sitemap generated by @nuxtjs/sitemap v7.6.0 at 2026-03-10T02:17:04.870Z -->
+<!-- XML Sitemap generated by @nuxtjs/sitemap v7.6.0 at 2026-03-10T02:36:03.390Z -->
