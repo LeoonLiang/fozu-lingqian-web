@@ -4,12 +4,12 @@
     <div v-if="step === 'choose'" class="flex flex-col items-center gap-6">
       <div class="grid grid-cols-2 gap-4 w-full max-w-md">
         <div class="antique-card flex flex-col items-center justify-center p-6 cursor-pointer group" @click="step = 'pray'">
-          <img src="~/assets/css/签筒.png" alt="签筒" class="w-16 h-20 object-contain mb-3 group-hover:scale-105 transition-transform">
+          <img src="https://cdn.tsinbei.com/gh/LeoonLiang/pic@main/img/qiantong.png" alt="签筒" class="w-16 h-20 object-contain mb-3 group-hover:scale-105 transition-transform">
           <span class="text-lg font-bold text-xuanwu-text group-hover:text-xuanwu-red transition-colors">摇签求签</span>
           <span class="text-xs text-xuanwu-text-light mt-1">摇签 · 掷杯 · 解签</span>
         </div>
         <div class="antique-card flex flex-col items-center justify-center p-6 cursor-pointer group" @click="startJustThrow">
-          <img src="~/assets/css/筊杯阳.png" alt="筊杯" class="w-16 h-16 object-contain mb-3 group-hover:scale-105 transition-transform">
+          <img src="https://cdn.tsinbei.com/gh/LeoonLiang/pic@main/img/yang.png" alt="筊杯" class="w-16 h-16 object-contain mb-3 group-hover:scale-105 transition-transform">
           <span class="text-lg font-bold text-xuanwu-text group-hover:text-xuanwu-red transition-colors">直接掷杯</span>
           <span class="text-xs text-xuanwu-text-light mt-1">掷杯 · 问事</span>
         </div>
@@ -22,8 +22,8 @@
       <p class="text-sm text-xuanwu-text-light mb-4">向佛祖虔诚求签</p>
       <div class="qiantong-wrap" :class="{ shaking: isShaking }" @click="startShake">
         <div class="qiantong">
-          <img src="~/assets/css/签筒.png" alt="签筒" class="w-full h-full object-contain">
-          <img v-if="showStick" src="~/assets/css/签.png" alt="签" class="qian-stick" :class="{ pop: stickPop }">
+          <img src="https://cdn.tsinbei.com/gh/LeoonLiang/pic@main/img/qiantong.png" alt="签筒" class="w-full h-full object-contain">
+          <img v-if="showStick" src="https://cdn.tsinbei.com/gh/LeoonLiang/pic@main/img/qian.png" alt="签" class="qian-stick" :class="{ pop: stickPop }">
         </div>
       </div>
       <button v-if="!isShaking" class="btn-fortune-primary" @click="startShake">摇 签</button>
@@ -273,7 +273,7 @@ const justThrowMeaning = computed(() => {
 
 /* 阳面(平面) 在后 */
 .bwei-back {
-  background-image: url('~/assets/css/筊杯阳.png');
+  background-image: url('https://cdn.tsinbei.com/gh/LeoonLiang/pic@main/img/yang.png');
   top: 50%;
   left: 50%;
   transform: translate(-60%, -45%) rotate(-15deg);
@@ -281,7 +281,7 @@ const justThrowMeaning = computed(() => {
 
 /* 阴面(凸面) 在前 - 需要旋转180deg才能和阳面对齐 */
 .bwei-front {
-  background-image: url('~/assets/css/筊杯阴.png');
+  background-image: url('https://cdn.tsinbei.com/gh/LeoonLiang/pic@main/img/yin.png');
   top: 50%;
   left: 50%;
   transform: translate(-40%, -55%) rotate(190deg);
@@ -327,7 +327,7 @@ const justThrowMeaning = computed(() => {
 .bwei-pair.land-b .bwei-front {
   animation: landB-front 0.5s 0.6s ease-out forwards;
   opacity: 0;
-  background-image: url('~/assets/css/筊杯阳.png');
+  background-image: url('https://cdn.tsinbei.com/gh/LeoonLiang/pic@main/img/yang.png');
 }
 
 @keyframes landB-back {
@@ -343,7 +343,7 @@ const justThrowMeaning = computed(() => {
 .bwei-pair.land-c .bwei-back {
   animation: landC-back 0.5s 0.6s ease-out forwards;
   opacity: 0;
-  background-image: url('~/assets/css/筊杯阴.png');
+  background-image: url('https://cdn.tsinbei.com/gh/LeoonLiang/pic@main/img/yin.png');
 }
 .bwei-pair.land-c .bwei-front {
   animation: landC-front 0.5s 0.6s ease-out forwards;
